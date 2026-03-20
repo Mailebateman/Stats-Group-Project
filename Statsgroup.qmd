@@ -1,0 +1,35 @@
+---
+title: "Statsgroup"
+format: html
+---
+
+```{r}
+# Creating the data frame for Table S1
+ed_orders_data <- data.frame(
+  Experiment = c("Paracetamol", "Opioids", "Lactated Ringer's solution"),
+  
+  Observed = c(17789, 3120, 8372),
+  
+  Expected_Value = c(19785, 2930, 8360),
+  Expected_95_CI = c("(18,888-20,682)", "(2,587-3,274)", "(7,760-8,960)"),
+  
+  Change = c(-1996, 190, 12),
+  
+  OER_Value = c(0.90, 1.06, 1.00),
+  OER_95_CI = c("(0.86-0.94)", "(0.95-1.21)", "(0.93-1.08)"),
+  
+  ED_Visits = c(88857, 88857, 88857),
+  
+  Observed_per_1000 = c(200.2, 35.1, 94.2),
+  Expected_per_1000 = c(222.7, 33.0, 94.1),
+  Rate_Change_per_1000 = c(-22.5, 2.1, 0.1)
+)
+
+# View the table in the console
+print(ed_orders_data)
+
+# To view it in a spreadsheet-like window in R Studio
+View(ed_orders_data)
+
+```
+
