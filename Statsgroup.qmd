@@ -33,3 +33,12 @@ View(ed_orders_data)
 
 ```
 
+Academic Literature on Racial and Ethnic Disparities in Reproductive Medicine in the US:
+```{r}
+article_dat <- readr::read_csv("https://kcorreia.people.amherst.edu/repro_med_disparities-article-level-data.csv")
+
+model_dat <- readr::read_csv("https://kcorreia.people.amherst.edu/repro_med_disparities-model-level-data.csv")
+
+model_dat
+```
+
